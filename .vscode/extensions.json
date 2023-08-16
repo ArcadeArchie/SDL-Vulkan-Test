@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools-extension-pack",
+        "twxs.cmake",
+        "vadimcn.vscode-lldb",
+        "eamodio.gitlens",
+        "vscode-icons-team.vscode-icons",
+        "redhat.vscode-xml",
+        "ms-vscode.hexeditor"
+    ]
+}
