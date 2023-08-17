@@ -6,6 +6,21 @@
             "command": "build",
             "label": "build",
             "problemMatcher": "$gcc"
+        },
+        {
+            "type": "shell",
+            "label": "Build shaders",
+            "command": "${workspaceFolder}/shaders/compile.sh",
+            "windows": {
+                "command": "${workspaceFolder}/shaders/compile.cmd"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/shaders"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+            }
         }
     ]
 }
