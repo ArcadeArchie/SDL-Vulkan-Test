@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <string>
 #include <iostream>
-#include <map>
 
 /* SDL2 */
 #include <SDL2/SDL.h>
@@ -13,21 +12,17 @@
 
 /* Vulkan */
 #include <vulkan/vulkan.h>
-
+#include "Engine/VulkanContext.h"
 class App
 {
 private:
-    std::map<VkResult, std::string> vulkanErrors;
     SDL_Window *window;
     int windowHeight;
     int windowWidth;
     std::string windowName;
     SDL_Event currentEvent;
     bool shouldQuit;
-    VkInstance vkInst;
-    VkSurfaceKHR vkSurf;
-    uint32_t sdlExtCount;
-    const char **extNames;
+    VulkanContext* context;
 
     bool InitSDL();
     bool InitVulkan();

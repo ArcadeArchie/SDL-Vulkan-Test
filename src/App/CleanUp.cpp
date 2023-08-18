@@ -2,9 +2,7 @@
 
 void App::CleanUp()
 {
-    vkDestroySurfaceKHR(vkInst, vkSurf, NULL);
-    vkDestroyInstance(vkInst, NULL);
-    free(extNames);
+    delete context;
     SDL_DestroyWindow(window);
     SDL_Quit();
 }
